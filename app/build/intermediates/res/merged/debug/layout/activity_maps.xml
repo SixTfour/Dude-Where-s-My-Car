@@ -11,8 +11,8 @@
         xmlns:tools="http://schemas.android.com/tools" android:layout_width="415dp"
         android:layout_height="460dp" android:id="@+id/map" tools:context=".MapsActivity"
         android:name="com.google.android.gms.maps.SupportMapFragment"
-            android:layout_alignParentBottom="true"
-            android:layout_below="@+id/Title" />
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true" />
 
     <Button
         android:layout_width="125dp"
@@ -51,25 +51,4 @@
         android:layout_marginRight="5dp"
         android:layout_marginEnd="25dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Dude, Where's My Car?"
-        android:id="@+id/Title"
-        android:layout_alignParentRight="false"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentStart="true"
-        android:height="60dp"
-        android:textColor="#ffffff"
-        android:textSize="27dp"
-        android:background="#5555FF"
-        android:layout_alignParentBottom="false"
-        android:gravity="center"
-        android:shadowColor="#000000"
-        android:shadowDx="2"
-        android:shadowDy="2"
-        android:shadowRadius="50" />
-
-</RelativeLayout><!-- From: file:/C:/Users/sheld_000/AndroidStudioProjects/Dude,Where'sMyCar/app/src/main/res/layout/activity_maps.xml -->
+</RelativeLayout>

@@ -1,14 +1,12 @@
 package com.wordpress.slklaus.dudewheresmycar;
 
 import android.app.AlertDialog;
-import android.graphics.Typeface;
 import android.location.Location;
 import android.location.LocationListener;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.TextView;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -49,10 +47,6 @@ public class MapsActivity extends FragmentActivity implements GoogleApiClient.Co
             myAlert.setMessage("Please turn on phone Location Service")
                     .create();
         }
-
-        Typeface lobster = Typeface.createFromAsset(getAssets(), "LobsterTwo-BoldItalic.ttf");
-        TextView title = (TextView)findViewById(R.id.Title);
-        title.setTypeface(lobster);
     }
 
     @Override
