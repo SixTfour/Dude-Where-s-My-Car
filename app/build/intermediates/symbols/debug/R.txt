@@ -638,8 +638,8 @@ int id art 0x7f0d0080
 int id auto 0x7f0d002a
 int id beginning 0x7f0d001a
 int id book_now 0x7f0d0037
-int id button 0x7f0d0078
-int id button2 0x7f0d0079
+int id button 0x7f0d0077
+int id button2 0x7f0d0078
 int id buttonPanel 0x7f0d0052
 int id buttons 0x7f0d0086
 int id buyButton 0x7f0d0034
@@ -688,7 +688,7 @@ int id line3 0x7f0d0092
 int id listMode 0x7f0d000a
 int id list_item 0x7f0d004f
 int id logo_only 0x7f0d003d
-int id map 0x7f0d0077
+int id map 0x7f0d0079
 int id match_parent 0x7f0d0036
 int id media_actions 0x7f0d008c
 int id media_route_control_frame 0x7f0d007e

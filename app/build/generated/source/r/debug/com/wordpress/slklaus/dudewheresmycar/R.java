@@ -2170,8 +2170,8 @@ containing a value of this type.
         public static final int auto=0x7f0d002a;
         public static final int beginning=0x7f0d001a;
         public static final int book_now=0x7f0d0037;
-        public static final int button=0x7f0d0078;
-        public static final int button2=0x7f0d0079;
+        public static final int button=0x7f0d0077;
+        public static final int button2=0x7f0d0078;
         public static final int buttonPanel=0x7f0d0052;
         public static final int buttons=0x7f0d0086;
         public static final int buyButton=0x7f0d0034;
@@ -2220,7 +2220,7 @@ containing a value of this type.
         public static final int listMode=0x7f0d000a;
         public static final int list_item=0x7f0d004f;
         public static final int logo_only=0x7f0d003d;
-        public static final int map=0x7f0d0077;
+        public static final int map=0x7f0d0079;
         public static final int match_parent=0x7f0d0036;
         public static final int media_actions=0x7f0d008c;
         public static final int media_route_control_frame=0x7f0d007e;

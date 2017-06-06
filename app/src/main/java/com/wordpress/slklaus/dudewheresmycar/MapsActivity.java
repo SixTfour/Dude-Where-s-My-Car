@@ -20,16 +20,13 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class MapsActivity extends FragmentActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener {
 
     private GoogleMap mMap; // Might be null if Google Play services APK is not available.
     private GoogleApiClient mGoogleApiClient;
     private LocationRequest mLocationRequest;
     public static final String TAG = MapsActivity.class.getSimpleName();
-    List<GoogleMap> arr = new ArrayList<>();
+    public boolean markerCheck = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -152,7 +149,7 @@ public class MapsActivity extends FragmentActivity implements GoogleApiClient.Co
                         .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE))
                         .title("My Car");
                 //Limits the number of markers to one
-                if (arr.size() < 1) {
+                if (markerCheck == false) {
                     //Adds the marker to the map
                     mMap.addMarker(options.position(latLng));
                     //Moves camera to position of the car with animation
@@ -160,8 +157,8 @@ public class MapsActivity extends FragmentActivity implements GoogleApiClient.Co
                             .target(new LatLng(currentLatitude, currentLongitude)).zoom(18).build();
                     mMap.animateCamera(CameraUpdateFactory
                             .newCameraPosition(cameraPosition));
-                    //Adds mMap to the arr array
-                    arr.add(0, mMap);
+                    //Sets markerCheck to true
+                    markerCheck = true;
                 }
 
                 break;
@@ -169,11 +166,11 @@ public class MapsActivity extends FragmentActivity implements GoogleApiClient.Co
     }
 
     public void deletePin(View v) {
-        //Deletes the Marker off of the screen by clearing the map and the array
+        //Deletes the Marker off of the screen by clearing the map and setting markerCheck to false
         switch (v.getId()) {
             case R.id.button2:
                 mMap.clear();
-                arr.clear();
+                markerCheck = false;
                 break;
         }
     }
